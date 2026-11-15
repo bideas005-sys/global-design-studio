@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://https://global-design-studio-delta.vercel.app//sitemap.xml
