@@ -12,14 +12,103 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frequently Asked Questions (FAQ) | Global Design & Print Studio</title>
+    <title>Manual Vector Tracing &amp; Illustrator FAQ | Global Design &amp; Print Studio</title>
     <link rel="icon" type="image/png" href="/logo.png">
-    <meta name="description" content="Find answers to common questions about 100% manual vector tracing, print-ready file formats (AI, EPS, SVG, CDR), real estate video editing, custom PVC printing, and international payments.">
+    <meta name="description" content="Answers to common questions about manual vector tracing in Illustrator, outline tracing, key shortcuts (Ctrl+T, Ctrl+H, Ctrl+Shift+D, Ctrl+Shift+O), ChatGPT limits, free vs. paid tools, and JPEG to vector conversion.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://global-design-studio-delta.vercel.app/faq.html" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I manually trace an image in Illustrator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Place your image on a locked bottom layer, lower its opacity, and redraw every path and curve by hand using the Pen Tool (P) on a new layer above it. Manual tracing gives you clean anchor points, smooth Bezier curves, and full control over colors and typography for logos, vinyl cutting, and screen printing without extra nodes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I trace just the outline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Draw paths with Fill set to None and a visible Stroke color, or use Outline View (Ctrl+Y) to inspect and trace the pure path geometry. Outlines are essential when preparing artwork for vinyl plotters, laser or CNC cutting, or embroidery borders so machines follow exact paths without double lines or gaps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Ctrl+T do in Illustrator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pressing Ctrl+T opens or toggles the Character panel for text formatting. When rebuilding logos that include text, the Character panel helps you adjust font family, tracking, leading, and character spacing so recreated lettering matches the original brand style cleanly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the purpose of Ctrl+H?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pressing Ctrl+H toggles Hide Edges, hiding anchor points and path outlines while keeping your selection active. While fine-tuning curves or checking alignment during manual vector tracing, hiding path edges lets you judge visual balance and curve smoothness without anchor points getting in the way."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Ctrl+Shift+D?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pressing Ctrl+Shift+D (or Shift+Ctrl+D) toggles the Transparency Grid on the artboard. The transparency grid helps you check transparent areas, semi-transparent shadows, and edge knockouts so you know which parts of your artwork are truly transparent versus solid white."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Ctrl+Shift+O do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pressing Ctrl+Shift+O converts live editable text into vector outlines (shapes). Converting text to outlines prevents missing-font issues when sending .AI, .EPS, or .PDF files to print shops or other designers. Always keep a hidden backup of live text first in case copy changes later."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What about Ctrl+A to Z in Illustrator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single command for all keys from A to Z—each letter or Ctrl combination triggers a different tool or action, with Ctrl+Z being Undo. Instead of memorizing every key at once, focus on the shortcuts you use most during vector tracing and cleanup—such as P (Pen Tool), Ctrl+Z (Undo), Ctrl+G (Group), Ctrl+T (Character), Ctrl+H (Hide Edges), and Ctrl+Shift+O (Create Outlines)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can ChatGPT vectorize an image?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ChatGPT can generate vector-style images (usually as raster PNG/WebP) or write basic SVG code, but it does not reliably turn a complex uploaded logo or photo into a clean, print-ready vector file. Simple icons can sometimes be written as basic SVG markup, yet detailed logos, gradients, and brand typography often come out rough or distorted."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a free way to vectorize an image? / Can I vectorize an image for free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes—free online converters, open-source tools like Inkscape, and basic auto-trace features can convert simple shapes for free, though results on detailed logos are often messy. Free tools work fine for quick drafts or simple black-and-white shapes, but they frequently add extra anchor points, wobble curves, and warp text."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I turn a JPEG into a vector?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes—either by manually redrawing the JPEG into vector paths (.AI, .EPS, .SVG, .CDR) or by running a simple image through a tracing tool. A JPEG is made of fixed pixels and gets blurry when scaled up, whereas a vector uses mathematical paths that stay sharp at any size."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans leading-relaxed antialiased">
 
@@ -27,8 +116,8 @@
     <header class="bg-gray-800/95 backdrop-blur-md border-b border-gray-700 sticky top-0 z-50">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
             <a href="/" class="text-lg sm:text-xl font-extrabold tracking-tight text-white flex items-center gap-3">
-                <img src="/logo.png" alt="Global Design & Print Studio Logo" class="w-10 h-10 rounded-full object-cover border border-amber-500/60 shadow-md">
-                <span>Global Design & Print</span>
+                <img src="/logo.png" alt="Global Design &amp; Print Studio Logo" class="w-10 h-10 rounded-full object-cover border border-amber-500/60 shadow-md">
+                <span>Global Design &amp; Print</span>
             </a>
             <div class="hidden md:flex items-center space-x-5 text-sm font-medium text-gray-300">
                 <a href="/" class="hover:text-amber-500 transition">Home</a>
@@ -50,78 +139,179 @@
     <main class="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div class="text-center mb-14">
             <span class="bg-amber-500/10 text-amber-400 border border-amber-500/20 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase">
-                Help Center & Client Guides
+                Manual Vector Tracing &amp; Illustrator Guide
             </span>
             <h1 class="text-3xl sm:text-5xl font-extrabold text-white mt-4">
                 Frequently Asked <span class="text-amber-500">Questions</span>
             </h1>
             <p class="text-gray-400 mt-4 max-w-2xl mx-auto text-sm sm:text-base">
-                Everything you need to know about our manual vector tracing process, print-ready formats, video editing turnaround, custom printing, and international payments.
+                Clear answers on manual vector tracing in Illustrator, essential shortcuts, AI and free converter limitations, and turning JPEGs into clean vector files.
             </p>
         </div>
 
-        <!-- Category 1: Vector Tracing & File Formats -->
+        <!-- Category 1: Manual Vector Tracing & Illustrator Workflow -->
         <section class="mb-12">
             <h2 class="text-xl font-bold text-amber-400 mb-4 flex items-center gap-2 border-b border-gray-800 pb-2">
-                <i class="fa-solid fa-bezier-curve"></i> Vector Tracing & Artwork Preparation
+                <i class="fa-solid fa-bezier-curve"></i> Manual Vector Tracing &amp; Illustrator Shortcuts
             </h2>
             <div class="space-y-4">
-                <!-- FAQ Item 1 -->
+                <!-- Q1 -->
                 <details class="group bg-gray-800 border border-gray-700 rounded-2xl p-6 open:border-amber-500/60 transition" open>
                     <summary class="flex justify-between items-center font-bold text-white cursor-pointer list-none">
-                        <span>What is the difference between manual vector tracing and auto-tracing?</span>
+                        <span>How do I manually trace an image in Illustrator?</span>
                         <span class="text-amber-400 group-open:rotate-180 transition-transform">
                             <i class="fa-solid fa-chevron-down"></i>
                         </span>
                     </summary>
-                    <p class="text-gray-300 text-sm mt-4 leading-relaxed">
-                        Automated tracing tools guess edges and create jagged lines, warped fonts, and hundreds of messy anchor points that cause vinyl cutters and screen printers to glitch. At <a href="/vector-tracing.html" class="text-amber-400 underline">Global Design & Print Studio</a>, we redraw every curve, corner, and letter manually using the Pen Tool in Adobe Illustrator and CorelDRAW for razor-sharp, press-ready results.
-                    </p>
+                    <div class="text-gray-300 text-sm mt-4 leading-relaxed space-y-2">
+                        <p><strong class="text-white">Answer:</strong> Place your image on a locked bottom layer, lower its opacity, and redraw every path and curve by hand using the <strong>Pen Tool (P)</strong> on a new layer above it.</p>
+                        <p>Manual tracing gives you clean anchor points, smooth Bezier curves, and full control over colors and typography. Unlike one-click auto-trace tools, hand-drawn paths scale cleanly for logos, vinyl cutting, and screen printing without extra nodes.</p>
+                    </div>
                 </details>
 
-                <!-- FAQ Item 2 -->
+                <!-- Q2 -->
                 <details class="group bg-gray-800 border border-gray-700 rounded-2xl p-6 open:border-amber-500/60 transition">
                     <summary class="flex justify-between items-center font-bold text-white cursor-pointer list-none">
-                        <span>Which file formats will I receive when my logo is vectorized?</span>
+                        <span>How do I trace just the outline?</span>
                         <span class="text-amber-400 group-open:rotate-180 transition-transform">
                             <i class="fa-solid fa-chevron-down"></i>
                         </span>
                     </summary>
-                    <p class="text-gray-300 text-sm mt-4 leading-relaxed">
-                        Every completed vector order includes a complete master bundle: editable <strong>.AI</strong> (Adobe Illustrator), <strong>.EPS</strong>, <strong>.SVG</strong> (for web and cutting machines), <strong>.CDR</strong> (CorelDRAW, on request), a print-ready <strong>Vector PDF</strong>, and a high-resolution <strong>300 DPI transparent PNG</strong>.
-                    </p>
+                    <div class="text-gray-300 text-sm mt-4 leading-relaxed space-y-2">
+                        <p><strong class="text-white">Answer:</strong> Draw paths with <strong>Fill set to None</strong> and a visible <strong>Stroke</strong> color, or use <strong>Outline View (Ctrl+Y)</strong> to inspect and trace the pure path geometry.</p>
+                        <p>Outlines are essential when preparing artwork for vinyl plotters, laser or CNC cutting, or embroidery borders. Keeping strokes clean and joined ensures cutting machines follow exact paths without double lines or gaps.</p>
+                    </div>
+                </details>
+
+                <!-- Q3 -->
+                <details class="group bg-gray-800 border border-gray-700 rounded-2xl p-6 open:border-amber-500/60 transition">
+                    <summary class="flex justify-between items-center font-bold text-white cursor-pointer list-none">
+                        <span>What does Ctrl+T do in Illustrator?</span>
+                        <span class="text-amber-400 group-open:rotate-180 transition-transform">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-300 text-sm mt-4 leading-relaxed space-y-2">
+                        <p><strong class="text-white">Answer:</strong> Pressing <strong>Ctrl+T</strong> opens or toggles the <strong>Character</strong> panel for text formatting.</p>
+                        <p>When rebuilding logos that include text, the Character panel helps you adjust font family, tracking, leading, and character spacing so recreated lettering matches the original brand style cleanly.</p>
+                    </div>
+                </details>
+
+                <!-- Q4 -->
+                <details class="group bg-gray-800 border border-gray-700 rounded-2xl p-6 open:border-amber-500/60 transition">
+                    <summary class="flex justify-between items-center font-bold text-white cursor-pointer list-none">
+                        <span>What is the purpose of Ctrl+H?</span>
+                        <span class="text-amber-400 group-open:rotate-180 transition-transform">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-300 text-sm mt-4 leading-relaxed space-y-2">
+                        <p><strong class="text-white">Answer:</strong> Pressing <strong>Ctrl+H</strong> toggles <strong>Hide Edges</strong>, hiding anchor points and path outlines while keeping your selection active.</p>
+                        <p>While fine-tuning curves or checking alignment during manual vector tracing, hiding path edges lets you judge visual balance and curve smoothness without anchor points getting in the way.</p>
+                    </div>
+                </details>
+
+                <!-- Q5 -->
+                <details class="group bg-gray-800 border border-gray-700 rounded-2xl p-6 open:border-amber-500/60 transition">
+                    <summary class="flex justify-between items-center font-bold text-white cursor-pointer list-none">
+                        <span>What is Ctrl+Shift+D?</span>
+                        <span class="text-amber-400 group-open:rotate-180 transition-transform">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-300 text-sm mt-4 leading-relaxed space-y-2">
+                        <p><strong class="text-white">Answer:</strong> Pressing <strong>Ctrl+Shift+D</strong> (or Shift+Ctrl+D) toggles the <strong>Transparency Grid</strong> on the artboard.</p>
+                        <p>The transparency grid helps you check transparent areas, semi-transparent shadows, and edge knockouts so you know which parts of your artwork are truly transparent versus solid white.</p>
+                    </div>
+                </details>
+
+                <!-- Q6 -->
+                <details class="group bg-gray-800 border border-gray-700 rounded-2xl p-6 open:border-amber-500/60 transition">
+                    <summary class="flex justify-between items-center font-bold text-white cursor-pointer list-none">
+                        <span>What does Ctrl+Shift+O do?</span>
+                        <span class="text-amber-400 group-open:rotate-180 transition-transform">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-300 text-sm mt-4 leading-relaxed space-y-2">
+                        <p><strong class="text-white">Answer:</strong> Pressing <strong>Ctrl+Shift+O</strong> converts live editable text into <strong>vector outlines</strong> (shapes).</p>
+                        <p>Converting text to outlines prevents missing-font issues when sending <strong>.AI</strong>, <strong>.EPS</strong>, or <strong>.PDF</strong> files to print shops or other designers. Always keep a hidden backup of live text first in case copy changes later.</p>
+                    </div>
+                </details>
+
+                <!-- Q7 -->
+                <details class="group bg-gray-800 border border-gray-700 rounded-2xl p-6 open:border-amber-500/60 transition">
+                    <summary class="flex justify-between items-center font-bold text-white cursor-pointer list-none">
+                        <span>What about "Ctrl+A to Z" in Illustrator?</span>
+                        <span class="text-amber-400 group-open:rotate-180 transition-transform">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-300 text-sm mt-4 leading-relaxed space-y-2">
+                        <p><strong class="text-white">Answer:</strong> There is no single command for all keys from A to Z—each letter or Ctrl combination triggers a different tool or action, with <strong>Ctrl+Z</strong> being <strong>Undo</strong>.</p>
+                        <p>Instead of memorizing every key at once, focus on the shortcuts you use most during vector tracing and cleanup—such as <strong>P</strong> (Pen Tool), <strong>Ctrl+Z</strong> (Undo), <strong>Ctrl+G</strong> (Group), <strong>Ctrl+T</strong> (Character), <strong>Ctrl+H</strong> (Hide Edges), and <strong>Ctrl+Shift+O</strong> (Create Outlines).</p>
+                    </div>
                 </details>
             </div>
         </section>
 
-        <!-- Category 2: Turnaround, Ordering & Payments -->
+        <!-- Category 2: AI Tools, Free Converters & JPEG to Vector -->
         <section class="mb-12">
             <h2 class="text-xl font-bold text-amber-400 mb-4 flex items-center gap-2 border-b border-gray-800 pb-2">
-                <i class="fa-solid fa-clock"></i> Turnaround Time & International Payments
+                <i class="fa-solid fa-wand-magic-sparkles"></i> AI Tools, Free Converters &amp; JPEG to Vector
             </h2>
             <div class="space-y-4">
-                <!-- FAQ Item 3 -->
+                <!-- Q8 -->
                 <details class="group bg-gray-800 border border-gray-700 rounded-2xl p-6 open:border-amber-500/60 transition">
                     <summary class="flex justify-between items-center font-bold text-white cursor-pointer list-none">
-                        <span>How fast is your turnaround time, and how do international clients pay?</span>
+                        <span>Can ChatGPT vectorize an image?</span>
                         <span class="text-amber-400 group-open:rotate-180 transition-transform">
                             <i class="fa-solid fa-chevron-down"></i>
                         </span>
                     </summary>
-                    <p class="text-gray-300 text-sm mt-4 leading-relaxed">
-                        Standard vector tracing and graphic re-design orders are delivered within <strong>6 to 24 hours</strong> (with urgent 2–4 hour rush delivery available). International clients can pay effortlessly via <strong>Credit/Debit Card, Payoneer Invoice, Wise, or Crypto (USDT)</strong>.
-                    </p>
+                    <div class="text-gray-300 text-sm mt-4 leading-relaxed space-y-2">
+                        <p><strong class="text-white">Answer:</strong> ChatGPT can generate vector-style images (usually as raster PNG/WebP) or write basic SVG code, but it does not reliably turn a complex uploaded logo or photo into a clean, print-ready vector file.</p>
+                        <p>Simple icons can sometimes be written as basic SVG markup, yet detailed logos, gradients, and brand typography often come out rough or distorted. For commercial printing, embroidery, or signage, <a href="/vector-tracing.html" class="text-amber-400 underline">manual vector tracing</a> produces cleaner paths and accurate files.</p>
+                    </div>
+                </details>
+
+                <!-- Q9 -->
+                <details class="group bg-gray-800 border border-gray-700 rounded-2xl p-6 open:border-amber-500/60 transition">
+                    <summary class="flex justify-between items-center font-bold text-white cursor-pointer list-none">
+                        <span>Is there a free way to vectorize an image? / Can I vectorize an image for free?</span>
+                        <span class="text-amber-400 group-open:rotate-180 transition-transform">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-300 text-sm mt-4 leading-relaxed space-y-2">
+                        <p><strong class="text-white">Answer:</strong> Yes—free online converters, open-source tools like Inkscape, and basic auto-trace features can convert simple shapes for free, though results on detailed logos are often messy.</p>
+                        <p>Free tools work fine for quick drafts or simple black-and-white shapes, but they frequently add extra anchor points, wobble curves, and warp text. If a print shop rejects an auto-traced file, <a href="mailto:bideas005@gmail.com?subject=Vector%20Tracing%20Quote%20Request" class="text-amber-400 underline">requesting a quote</a> for manual redrawing saves time and reprints.</p>
+                    </div>
+                </details>
+
+                <!-- Q10 -->
+                <details class="group bg-gray-800 border border-gray-700 rounded-2xl p-6 open:border-amber-500/60 transition">
+                    <summary class="flex justify-between items-center font-bold text-white cursor-pointer list-none">
+                        <span>Can I turn a JPEG into a vector?</span>
+                        <span class="text-amber-400 group-open:rotate-180 transition-transform">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-300 text-sm mt-4 leading-relaxed space-y-2">
+                        <p><strong class="text-white">Answer:</strong> Yes—either by manually redrawing the JPEG into vector paths (<strong>.AI</strong>, <strong>.EPS</strong>, <strong>.SVG</strong>, <strong>.CDR</strong>) or by running a simple image through a tracing tool.</p>
+                        <p>A JPEG is made of fixed pixels and gets blurry when scaled up, whereas a vector uses mathematical paths that stay sharp at any size. Manual tracing is the most reliable way to turn a blurry or low-resolution JPEG into files ready for printing, merchandise, or signage. Read our full <a href="/vectorize-logo.html" class="text-amber-400 underline">logo vectorization guide</a> for details.</p>
+                    </div>
                 </details>
             </div>
         </section>
 
         <!-- Bottom CTA -->
         <div class="bg-gray-800/80 border border-amber-500/40 rounded-2xl p-8 text-center mt-14">
-            <h3 class="text-2xl font-bold text-white mb-2">Still Have a Question About Your File or Project?</h3>
+            <h3 class="text-2xl font-bold text-white mb-2">Need a Blurry Logo Redrawn Manually?</h3>
             <p class="text-gray-300 text-sm mb-6 max-w-xl mx-auto">
-                Attach your blurry logo, video brief, or print specs in an email—we will review your files and reply with a free quote within minutes.
+                Send your JPEG, PNG, screenshot, or sketch to <strong>bideas005@gmail.com</strong> for a fast, manual vector quote—no auto-trace shortcuts.
             </p>
-            <a href="mailto:bideas005@gmail.com?subject=Question%20%2F%20Free%20Quote%20Request" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-7 py-3.5 rounded-xl transition shadow-lg shadow-amber-500/20">
+            <a href="mailto:bideas005@gmail.com?subject=Manual%20Vector%20Tracing%20Quote%20Request" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-7 py-3.5 rounded-xl transition shadow-lg shadow-amber-500/20">
                 <i class="fa-solid fa-paper-plane"></i> Email bideas005@gmail.com
             </a>
         </div>
@@ -133,15 +323,15 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-gray-800">
                 <div>
                     <a href="/" class="text-lg font-extrabold text-white flex items-center gap-3 mb-3">
-                        <img src="/logo.png" alt="Global Design & Print Studio" class="w-9 h-9 rounded-full object-cover border border-amber-500/60">
-                        <span>Global Design & Print</span>
+                        <img src="/logo.png" alt="Global Design &amp; Print Studio" class="w-9 h-9 rounded-full object-cover border border-amber-500/60">
+                        <span>Global Design &amp; Print</span>
                     </a>
                     <p class="text-xs text-gray-400 leading-relaxed">
-                        International creative & production studio delivering 100% manual vector tracing, real estate video editing, custom PVC printing, and bespoke epoxy resin art worldwide.
+                        International creative &amp; production studio delivering 100% manual vector tracing, real estate video editing, custom PVC printing, and bespoke epoxy resin art worldwide.
                     </p>
                 </div>
                 <div>
-                    <h3 class="text-amber-500 font-bold mb-3 uppercase tracking-wider text-xs">Digital & Media</h3>
+                    <h3 class="text-amber-500 font-bold mb-3 uppercase tracking-wider text-xs">Digital &amp; Media</h3>
                     <ul class="space-y-2">
                         <li><a href="/vector-tracing.html" class="hover:text-white transition">Vector Tracing (.CDR/.AI)</a></li>
                         <li><a href="/graphic-redesigning.html" class="hover:text-white transition">Graphic Re-Designing</a></li>
@@ -149,18 +339,18 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-amber-500 font-bold mb-3 uppercase tracking-wider text-xs">Print & Guides</h3>
+                    <h3 class="text-amber-500 font-bold mb-3 uppercase tracking-wider text-xs">Print &amp; Guides</h3>
                     <ul class="space-y-2">
-                        <li><a href="/custom-printing.html" class="hover:text-white transition">PVC Cards & Brochures</a></li>
+                        <li><a href="/custom-printing.html" class="hover:text-white transition">PVC Cards &amp; Brochures</a></li>
                         <li><a href="/resin-art.html" class="hover:text-white transition">Custom Resin Art</a></li>
                         <li><a href="/vectorize-logo.html" class="hover:text-white transition">How to Vectorize a Logo</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-amber-500 font-bold mb-3 uppercase tracking-wider text-xs">Quick Links & Contact</h3>
+                    <h3 class="text-amber-500 font-bold mb-3 uppercase tracking-wider text-xs">Quick Links &amp; Contact</h3>
                     <ul class="space-y-2">
                         <li><a href="/" class="hover:text-white transition">Home</a></li>
-                        <li><a href="/blog.html" class="hover:text-white transition">Blog & Guides</a></li>
+                        <li><a href="/blog.html" class="hover:text-white transition">Blog &amp; Guides</a></li>
                         <li><a href="/faq.html" class="text-amber-400 font-semibold transition">FAQs</a></li>
                         <li><a href="mailto:bideas005@gmail.com?subject=Project%20Inquiry" class="hover:text-white transition"><i class="fa-solid fa-envelope text-amber-500 mr-1.5"></i> bideas005@gmail.com</a></li>
                     </ul>
@@ -168,7 +358,7 @@
             </div>
 
             <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-                <p>© 2026 Global Design & Print Studio • Serving USA & Global Clients. All rights reserved.</p>
+                <p>&copy; 2026 Global Design &amp; Print Studio &bull; Serving USA &amp; Global Clients. All rights reserved.</p>
                 <div class="flex flex-wrap items-center justify-center gap-2.5 text-gray-400">
                     <span class="text-gray-500">Accepted Payments:</span>
                     <i class="fa-brands fa-cc-visa text-xl hover:text-white transition" title="Visa"></i>
