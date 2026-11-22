@@ -4,7 +4,7 @@
     <!-- Home Page -->
     <url>
         <loc>https://global-design-studio-delta.vercel.app/</loc>
-        <lastmod>2026-11-19</lastmod>
+        <lastmod>2026-11-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -52,7 +52,7 @@
     <!-- Blog Main Page -->
     <url>
         <loc>https://global-design-studio-delta.vercel.app/blog.html</loc>
-        <lastmod>2026-11-19</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -65,12 +65,18 @@
         <priority>0.8</priority>
     </url>
 
-</urlset>
+    <!-- How to Vectorize a Logo Article Page -->
+    <url>
+        <loc>https://global-design-studio-delta.vercel.app/vectorize-logo.html</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-<!-- FAQ Page -->
+    <!-- FAQ Page -->
     <url>
         <loc>https://global-design-studio-delta.vercel.app/faq.html</loc>
-        <lastmod>2026-11-22</lastmod>
+        <lastmod>2026-11-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
